@@ -44,6 +44,7 @@ $(function() {
                     // 判断状态
                     if (res.status !== 0) {
                         return layer.msg(res.message);
+                        // $('.layui-input').val('');
                     }
                     layer.msg('恭喜您，注册用户成功')
                         //手动触发a链接的切换功能
