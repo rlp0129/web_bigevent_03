@@ -20,7 +20,6 @@ $.ajaxPrefilter(function(options) {
 
     //3.登录拦截
     options.complete = function(res) {
-        console.log(res);
         // console.log(res);
         //     //判断认证时失败跳转回登陆页面
         if (res.responseJSON.status === 1 && res.responseJSON.message === '身份认证失败！') {
